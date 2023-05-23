@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light p-3 sticky-top">
+  <h3>Wikinimous</h2>
+  <%= link_to "New article", "articles/new" %>
+</nav>
+<% @articles.each do |article| %>
+  <h2><%= article.title %></h2>
+  <br>
+  <p><%= article.content %></p>
+<% end %>
